@@ -4,11 +4,6 @@
 
 .bikes-models h2 {
   margin-bottom: 40px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  padding: 0px 20px 0px 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .bikes-models-list {
   display: flex;
