@@ -10,3 +10,6 @@
 
 /* Home */
 @import "./home/intro.css";
+
+/* Bikes */
+@import "./bikes/bikes-list.css"
