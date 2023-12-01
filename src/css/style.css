@@ -4,6 +4,8 @@
 @import "./utilities/text-colors.css";
 @import "./utilities/bg-colors.css";
 @import "./global/header.css";
+@import "./global/footer.css";
+
 
 /* Utilities */
 @import "./utilities/components.css";
