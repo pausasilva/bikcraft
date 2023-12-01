@@ -15,4 +15,7 @@
 @import "./home/testimony.css";
 
 /* Bikes */
-@import "./bikes/bikes-list.css"
+@import "./bikes/bikes-list.css";
+
+/* Insurance */
+@import "./insurance/insurance.css";
