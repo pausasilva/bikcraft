@@ -24,6 +24,23 @@
   background: linear-gradient(#ffb60d, #e59317);
 }
 
+.button.arrow-foward {
+  display: flex;
+  align-items: center;
+}
+.button.arrow-foward::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.3s;
+}
+.button.arrow-foward:hover::after {
+  transform: translateX(4px);
+}
+
 .button.secondary {
   background: var(--gray-10);
   color: var(--gray-2);
