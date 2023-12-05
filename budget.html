@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Termos e Condições contratuais.">
+  <title>Orçamento | Bikcraft</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="budget">
+  <header class="bg-black-100">
+    <div class="header container">
+      <a href="./"><img src="./src/img/bikcraft.svg" alt="Bikcraft"></a>
+      <nav aria-label="Primary nav">
+        <ul class="header-menu text-1m text-white-100">
+          <li><a href="./bikes.html">Bicicletas</a></li>
+          <li><a href="./insurance.html">Seguros</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="title-bg">
+      <div class="title container">
+        <p class="text-2lb text-gray-5">Cotações no seu email</p>
+        <h1 class="text-1xxl text-white-100">solicite um orçamento<span class="text-yellow-1">.</span></h1>
+      </div>
+    </div>
+    <form class="budget container" action="./">
+      <div class="budget-product">
+        <h2 class="text-1xs text-gray-5">Bikcraft ou Seguro?</h2>
+
+        <input type="radio" name="type" value="bikcraft" id="bikcraft">
+        <label for="bikcraft">Bikcraft</label>
+
+        <input type="radio" name="type" value="insurance" id="insurance">
+        <label for="insurance">Seguro</label>
+
+        <div class="budget-content" id="budget-bikcraft">
+          <h2 class="text-1xs text-gray-5">Escolha a sua (BIKCRAFT)</h2>
+
+          <input type="radio" name="product" value="nimbus" id="nimbus">
+          <label for="nimbus">Nimbus Stark<span>R$ 4999</span></label>
+
+          <input type="radio" name="product" value="magic" id="magic">
+          <label for="magic">Magic Might <span>R$ 2999</span></label>
+
+          <input type="radio" name="product" value="cosmic" id="cosmic">
+          <label for="cosmic">Nebula Cosmic <span>R$ 3999</span></label>
+        </div>
+
+
+        <div class="budget-content" id="budget-insurance">
+          <h2 class="text-1xs text-gray-5">Escolha o plano</h2>
+
+          <input type="radio" name="product" value="silver" id="silver">
+          <label for="silver">Prata<span>R$ 199</span></label>
+
+          <input type="radio" name="product" value="gold" id="gold">
+          <label for="gold">Ouro<span>R$ 299</span></label>
+        </div>
+
+
+      </div>
+      <div class="budget-data form">
+        <h2 class="text-1xs text-gray-9 col2">dados pessoais</h2>
+        <div>
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+          <label for="surname">Sobrenome</label>
+          <input type="text" id="surname" name="surname">
+        </div>
+
+        <div class="col2">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+        </div>
+        <div class="col2">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <h2 class="text-1xs text-gray-9 col2">entrega</h2>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep">
+        </div>
+        <div>
+          <label for="number">Número</label>
+          <input type="text" id="number" name="number">
+        </div>
+        <div>
+          <label for="public-area">Logradouro</label>
+          <input type="text" id="public-area" name="public-area">
+        </div>
+        <div>
+          <label for="neighborhood">Bairro</label>
+          <input type="text" id="neighborhood" name="neighborhood">
+        </div>
+        <div>
+          <label for="city">Cidade</label>
+          <input type="text" id="city" name="city">
+        </div>
+        <div>
+          <label for="state">Estado</label>
+          <input type="text" id="state" name="state">
+        </div>
+        <button class="button col2">Solicitar Orçamento</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="./src/img/bikcraft.svg" alt="Bikcraft">
+      <div class="footer-contact">
+        <h3 class="text-2lb text-white-100">Contato</h3>
+        <ul class=" text-2m text-gray-5">
+          <li><a href="tel:+5575999999999">+55 75 9 9999-9999</a></li>
+          <li><a href="mailto:contato@bikecraft.com">contato@bikecraft.com</a></li>
+          <li>Rua da Passagem, 43, 22290-030, Botafogo.</li>
+          <li>Rio de Janeiro - RJ</li>
+        </ul>
+        <div class="footer-social">
+          <a href="./">
+            <img src="./src/img/social-media/instagram.svg" alt="Instagram">
+          </a>
+          <a href="./">
+            <img src="./src/img/social-media/facebook.svg" alt="Facebook">
+          </a>
+          <a href="./">
+            <img src="./src/img/social-media/youtube.svg" alt="Youtube">
+          </a>
+        </div>
+      </div>
+      <div class="footer-informations">
+        <h3 class="text-2lb text-white-100">Informações</h3>
+        <nav>
+          <ul class="text-1m text-gray-5">
+            <li><a href="./bikes.html">Bicicletas</a></li>
+            <li><a href="./insurance.html">Seguros</a></li>
+            <li><a href="./contact.html">Contato</a></li>
+            <li><a href="./terms.html">Termos e condições</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy text-2m text-gray-6">Bikcraft © Alguns direitos reservados.</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
