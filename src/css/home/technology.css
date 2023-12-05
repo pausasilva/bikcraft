@@ -48,6 +48,7 @@
 
 .technology-advantages img {
   width: 24px;
+  height: 24px;
   margin-bottom: 8px;
 }
 
@@ -73,7 +74,7 @@
 }
 
 @media (max-width: 600px) {
-  .technology-advantages{
+  .technology-advantages {
     flex-direction: column;
   }
 }
