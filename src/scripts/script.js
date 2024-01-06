@@ -1,10 +1,9 @@
 // Header menu page link selected
-
 const links = document.querySelectorAll('.header-menu a');
+
 links.forEach((link) => {
   const url = location.href;
   const href = link.href;
-
   if (url.includes(href)) {
     link.classList.add(`active`);
   }
@@ -23,14 +22,16 @@ parameters.forEach((element) => {
 
 // Common questions
 
+const questions = document.querySelectorAll('.questions button');
 
+questions.forEach((questionItem) => {
+  questionItem.addEventListener('click', (event) => {
+    const question = event.currentTarget;
+    const controls = question.getAttribute('aria-controls');
+    const answer = document.getElementById(controls);
 
-// questions.forEach((item) => {
-//   item.addEventListener('click', (event) => {
-//     const question = event.currentTarget;
-//     const controls = question.getAttribute('aria-controls');
-//     const answer = document.getElementById(controls);
-//     answer.classList.toggle('active');
-//     answer.setAttribute('aria-expanded', true);
-//   });
-// });
+    answer.classList.toggle('active');
+    const active = answer.classList.contains('active');
+    question.setAttribute('aria-expanded', active);
+  });
+});
