@@ -35,3 +35,23 @@ questions.forEach((questionItem) => {
     question.setAttribute('aria-expanded', active);
   });
 });
+
+// Bikes Gallery
+
+const gallery = document.querySelectorAll('.bike-img img');
+const galleryContainer = document.querySelector('.bike-img');
+
+gallery.forEach((event) => {
+  event.addEventListener('click', function changeImage(event) {
+    const img = event.currentTarget;
+    const mediaWidth = matchMedia('(min-width:937px)').matches;
+    if (mediaWidth) {
+      galleryContainer.prepend(img);
+    }
+  });
+});
+
+// Animation plugin
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

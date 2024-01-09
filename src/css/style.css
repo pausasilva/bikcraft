@@ -3,6 +3,7 @@
 @import "./utilities/colors.css";
 @import "./utilities/text-colors.css";
 @import "./utilities/bg-colors.css";
+@import "./utilities/animation.css";
 @import "./global/header.css";
 @import "./global/footer.css";
 
